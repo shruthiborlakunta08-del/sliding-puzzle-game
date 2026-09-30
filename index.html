@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5x5 Sliding Puzzle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>5x5 Sliding Puzzle</h1>
+
+      <div class="panel">
+        <div class="stat-box">
+          <span class="label">Time</span>
+          <strong id="timer">00:00</strong>
+        </div>
+        <div class="stat-box">
+          <span class="label">Moves</span>
+          <strong id="moves">0</strong>
+        </div>
+        <div class="stat-box">
+          <span class="label">Best</span>
+          <strong id="bestTime">--:--</strong>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="shuffleBtn" type="button">Shuffle</button>
+        <button id="resetBtn" type="button" class="secondary">Reset</button>
+      </div>
+
+      <div id="board" class="board" aria-label="Sliding puzzle board"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
